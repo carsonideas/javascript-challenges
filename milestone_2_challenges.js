@@ -1,4 +1,5 @@
-// Challenge 1: Sum of positives
+// Challenge 1 on sum of positives
+
 function sumOfPositives(numbers) {
   let sum = 0;
   for (let i = 0; i < numbers.length; i++) {
@@ -11,7 +12,8 @@ function sumOfPositives(numbers) {
 
 sumOfPositives([1, -3, 5, -2, 9, -8]);
 
-// Challenge 2: Find maximum value
+// Challenge 2 on finding the maximum value
+
 function findMax(numbers) {
   let maximum = numbers[0];
   for (let i = 1; i < numbers.length; i++) {
@@ -24,7 +26,8 @@ function findMax(numbers) {
 
 findMax([3, 7, 2, 9, 5]);
 
-// Challenge 3: Election winner
+// Challenge 3 in fndin the election winner
+
 function findWinner(candidates) {
   let winner = candidates[0];
   for (let i = 1; i < candidates.length; i++) {
@@ -42,7 +45,8 @@ let candidates = [
 ];
 findWinner(candidates);
 
-// Challenge 4: Longest word
+// Challenge 4 in fonding the Longest word
+
 function findLongestWord(words) {
   let longestWord = words[0];
   for (let i = 1; i < words.length; i++) {
@@ -55,7 +59,8 @@ function findLongestWord(words) {
 
 findLongestWord(["apple", "banana", "pear", "grapefruit"]);
 
-// Challenge 5: Count properties
+// Challenge 5 on finding the count properties
+
 function countProperties(obj) {
   let count = 0;
   for (let key in obj) {
@@ -66,7 +71,8 @@ function countProperties(obj) {
 
 countProperties({ name: "Alice", age: 25, city: "Paris" });
 
-// Challenge 6: Filter by length
+// Challenge 6 on filter by length
+
 function filterByLength(strings, minLength) {
   let filteredArray = [];
   for (let i = 0; i < strings.length; i++) {
@@ -79,7 +85,8 @@ function filterByLength(strings, minLength) {
 
 filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5);
 
-// Challenge 7: Sum of even numbers
+// Challenge 7 on finding the sum of even numbers
+
 function sumEvenNumbers(numbers) {
   let sum = 0;
   let evenNumbers = [];
@@ -94,7 +101,7 @@ function sumEvenNumbers(numbers) {
 
 sumEvenNumbers([1, 2, 3, 4, 5, 6]);
 
-// Challenge 8: Difference between sum of even and odd numbers
+// Challenge 8 on finding the difference between sum of even and odd numbers
 function differenceEvenOdd(numbers) {
   let evenSum = 0;
   let oddSum = 0;
@@ -117,7 +124,9 @@ function differenceEvenOdd(numbers) {
 
 differenceEvenOdd([1, 2, 3, 4, 5, 6]);
 
-// Challenge 9: Count truthy
+// Challenge 9  on count truthy
+
+
 function countTruthy(obj) {
   let count = 0;
   let truthyValues = [];
@@ -134,7 +143,7 @@ function countTruthy(obj) {
 
 countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null });
 
-// Challenge 10: Average of numbers
+// Challenge 10 on finding the average of numbers
 function average(numbers) {
   if (numbers.length === 0) {
     console.log(`The average of an empty array is 0`);
@@ -151,7 +160,9 @@ function average(numbers) {
 average([2, 4, 6, 8]);
 average([]);
 
-// Challenge 11: Linear search
+// Challenge 11 on  linear search
+
+
 function linearSearch(array, value) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === value) {
@@ -165,7 +176,8 @@ function linearSearch(array, value) {
 linearSearch([5, 3, 7, 1, 4], 7);
 linearSearch([5, 3, 7, 1, 4], 10);
 
-// Challenge 12: Reverse linear search
+// Challenge 12 in reverse linear search
+
 function reverseLinearSearch(array, value) {
   let lastIndex = -1;
   for (let i = 0; i < array.length; i++) {
@@ -184,7 +196,7 @@ function reverseLinearSearch(array, value) {
 reverseLinearSearch([5, 3, 7, 1, 4, 7], 7);
 reverseLinearSearch([5, 3, 7, 1, 4], 10);
 
-// Challenge 13: Linear search all indices
+// Challenge 13 on finding linear search of all indices
 function linearSearchAll(array, value) {
   let indices = [];
   for (let i = 0; i < array.length; i++) {
@@ -198,7 +210,7 @@ function linearSearchAll(array, value) {
 linearSearchAll([5, 3, 7, 1, 4, 7], 7);
 linearSearchAll([5, 3, 7, 1, 4], 10);
 
-// Challenge 14: Count occurrences
+// Challenge 14 on  on finding count occurrences
 function countOccurrences(strings) {
   let counts = {};
   
@@ -216,7 +228,9 @@ function countOccurrences(strings) {
 
 countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]);
 
-// Challenge 15: Remove duplicates
+// Challenge 15 on remove duplicates
+
+
 function removeDuplicates(array) {
   let uniqueArray = [];
   
@@ -238,7 +252,9 @@ function removeDuplicates(array) {
 
 removeDuplicates([1, 2, 3, 2, 4, 1, 5]);
 
-// Challenge 16: Most frequent
+// Challenge 16 on  on finding tje Most frequent index
+
+
 function mostFrequent(array) {
   let counts = {};
   let maxCount = 0;
